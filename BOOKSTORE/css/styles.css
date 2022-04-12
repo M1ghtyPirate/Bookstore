@@ -1,0 +1,151 @@
+.d_banner
+{
+	/* Задаём отступ */
+	margin-top: 5px;
+}
+
+.d_menu
+{
+	/* Задаём ширину блока */
+	width: 100%;
+	/* Задаём отступ */
+	margin: 4px;
+}
+
+.d_cont
+{
+	/* Выравниваем блок по центру и задаём соответствующие отступы */
+	padding-top: 10px;
+	margin: 0 15% 0 15%;
+	width: 70%;
+}
+
+body {
+	/* Убираем отступы */
+	margin: 0px;
+	padding: 0px;
+	/* Задаём шрифт */
+	font: 15px Georgia;
+	/* Задаём цвет заднего фона */
+	background-color: Beige;
+	/* Задаём ширину блока */
+	width: 100%;
+}
+
+ul {
+	/* Убираем маркеры у списка */
+	list-style: none;
+	/* Делаем элементы блочными */
+	display: block;
+	/* Убираем отступы */
+	margin: 0px;
+	padding: 0px;
+	/* Задаём ширину блока */
+	width: 100%;
+}
+
+ul:after {
+	/* Делаем элементы блочными */
+	display: block;
+	/* Убираем выравнивание */
+	float: none;
+	content: ' ';
+	/* Отменяем обтекание элемента одновременно с правого и левого края */
+	clear: both;
+}
+
+ul.menu > li {
+	/* Задаём выравнивание и позиционирование */
+	float: left;
+	/* Считаем координаты относительно исходного места */
+	position: relative;
+	/* Задаём ширину элемента */
+	width: 33%;
+}
+
+ul.menu > li > a {
+	/* Делаем элементы блочными */
+	display: block;
+	/* Задаем белый цвет */
+	color: #fff;
+	/* Задаем отступ */
+	padding: 10px;
+	/* Убираем форматирование */
+	text-decoration: none;
+	/* Задаем цвет заднего фона */
+	background-color: SaddleBrown;
+	/* Выравниваем текст по центру */
+	text-align: center;
+}
+
+ul.menu > li > a:hover {
+	/* Задаем цвет заднего фона при наведении */
+	background-color: SandyBrown;
+}
+
+ul.submenu {
+	/* Элемент абсолютно позиционирован */
+	position: absolute;
+	/* Определяем расстояние от верхнего и левого края родительского элемента до верхнего края дочернего элемента */
+	top: 37px;
+	left: 0px;
+	/* Делаем подменю скрытыми */
+	display: none;
+	/* Цвет заднего фона — белый */
+	background-color: white;
+	/* Выравниваем текст по центру */
+	text-align: center;
+}
+
+ul.submenu > li {
+	/* Блочное расположение элементов */
+	display: block;
+}
+
+ul.submenu > li > a {
+	/* Делаем элементы блочными */
+	display: block;
+	/* Убираем форматирование */
+	text-decoration: none;
+	/* Задаем отступ */
+	padding: 10px;
+	/* Задаем цвет */
+	color: #ffffff;
+	/* Задаем цвет заднего фона */
+	background-color: SaddleBrown;
+}
+
+ul.submenu > li > a:hover {
+	/* Цвет заднего фона при наведении */
+	background-color: SandyBrown;
+	/* Убираем подчеркивание при наведении */
+	text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+	/* Делаем элементы блочными */
+	display: block;
+}
+
+input[type="text"]
+{
+	width: 310px;
+	/*background: #ff0000 !important;*/
+}
+
+.tb1:hover
+{
+	background-color: Bisque;
+}
+
+.tb0
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+select
+{
+	width: 310px;
+	/*background: #ff0000 !important;*/
+}
